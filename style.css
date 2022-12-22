@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 99;
+    background-color: black;
+}
+
+.preloader_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.preloader_content h2 {
+    font-size: 32px;
+}
+
+.preloader_content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0.6)), url("bg.webp");
+    background-size: cover;
+    background-position: left center;
+}
+
+.bar {
+    position: fixed;
+    top: 50%;
+    left: 3.8rem;
+    width: 3px;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border: 20px;
+}
+
+.progress {
+    background-color: white;
+    width: 3px;
+    height: 10%;
+    border-radius: 10px;
+}
+
+.lyric {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    width: 50%;
+    transform: translate(0, -50%);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.control {
+    position: fixed;
+    bottom: 0;
+    padding: 3rem;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.control i {
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .lyric {
+        right: 2rem;
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    .preloader_content {
+        flex-direction: column;
+    }
+
+    .preloader_content img {
+        width: 50%;
+    }
+
+    .preloader_content h2 {
+        font-size: 24px;
+    }
+    
+    .preloader_content p {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .control {
+        padding: 2rem;
+    }
+
+    .bar {
+        left: 2.8rem;
+        width: 2px;
+        height: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #333;
+        border: 20px;
+    }
+    
+    .progress {
+        background-color: white;
+        width: 2px;
+        height: 10%;
+        border-radius: 10px;
+    }
+    
+}
+
