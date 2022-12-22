@@ -38,7 +38,6 @@ const playBtn = document.getElementById("play");
 const progress = document.querySelector(".progress");
 const music = new Audio();
 music.src = "./song.mp3";
-music.currentTime = 68;
 playBtn.addEventListener("click", playing);
 
 window.addEventListener("load", () => {
