@@ -39,12 +39,8 @@ const progress = document.querySelector(".progress");
 const music = new Audio();
 music.src = "./song.mp3";
 playBtn.addEventListener("click", playing);
-
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    preloader.style.display = "none";
-  }, 3000);
-});
+preloader.style.display = "none";
+  
 
 async function playing() {
   "use strict";
